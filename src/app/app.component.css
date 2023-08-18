@@ -1,0 +1,49 @@
+.example-container {
+    width: 300px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .example-list {
+    border: solid 1px #ccc;
+    min-height: 60px;
+    background-color: white;
+    padding: 16px;
+    display: block;
+  }
+  
+  .example-box {
+    padding: 8px;
+    border: solid 1px #ccc;
+    background-color: white;
+    cursor: move;
+    margin: 8px 0;
+    display: block;
+  }
+  
+  .example-box.cdk-drag-preview {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  
+  .example-drag-placeholder {
+    opacity: 0;
+    border: dashed 3px black;
+    transform: translateY(-100%);
+  }
+  
+  .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .example-list.cdk-drop-list-dragging .example-box.cdk-drag-dragging {
+    transform: scale(0.8);
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  td{
+    border: 1px solid black;
+  }
+  tr{
+    width: 400px;
+  }
+  
